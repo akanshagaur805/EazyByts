@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me | Akansha Gaur</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* ===== Background Styling ===== */
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        color: #fff;
+        background: url("profilebg.jpg") no-repeat center center fixed;
+        background-size: cover;
+        position: relative;
+      }
+
+      /* Dark overlay for readability */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(3px);
+        z-index: -1;
+      }
+
+      /* ===== Header ===== */
+      header {
+        background: rgba(30, 30, 30, 0.9);
+        padding: 20px 0;
+        text-align: center;
+        border-bottom: 2px solid #00ff7f;
+      }
+
+      header h1 {
+        color: #00ff7f;
+        margin-bottom: 5px;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+      }
+
+      nav ul li {
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: #00ff7f;
+      }
+
+      /* ===== About Section ===== */
+      .about-container {
+        max-width: 1000px;
+        margin: 100px auto;
+        padding: 2rem;
+        text-align: center;
+        color: #f5f5f5;
+        line-height: 1.8;
+        background: rgba(0, 0, 0, 0.65);
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      .about-container img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 1.5rem;
+        border: 3px solid #00ff7f;
+        box-shadow: 0 6px 15px rgba(0, 255, 127, 0.4);
+      }
+
+      .about-container h1 {
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+        color: #00ff7f;
+      }
+
+      .about-container h3 {
+        font-weight: 400;
+        color: #d1d1d1;
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .about-container p {
+        font-size: 1.1rem;
+        max-width: 800px;
+        margin: auto;
+        color: #e0e0e0;
+      }
+
+      /* ===== Footer ===== */
+      footer {
+        text-align: center;
+        padding: 1.5rem;
+        background: rgba(26, 26, 26, 0.9);
+        color: #ccc;
+        margin-top: 3rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Akansha Gaur</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html" style="color:#00ff7f;">About Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="about-container">
+      <img src="WIN_20240925_18_35_52_Pro.jpg" alt="Akansha Gaur" />
+      <h1>About Me</h1>
+      <h3>Developer | Data Analyst | Tech Enthusiast</h3>
+      <p>
+        Hello! I'm <b>Akansha Gaur</b> — a passionate technologist with strong foundations
+        in <b>Python</b>, <b>SQL</b>, and <b>Web Technologies (HTML, CSS, JavaScript)</b>.
+        My journey blends data analytics and web development, where I create
+        impactful, user-focused applications. I love exploring how data and design
+        come together to tell meaningful stories.
+      </p>
+      <br />
+      <p>
+        I'm currently pursuing opportunities in <b>Data Analysis</b> and
+        <b>Full Stack Web Development</b>, seeking to expand my expertise
+        and contribute to innovative, real-world solutions.
+      </p>
+    </section>
+
+    <footer>© 2025 Akansha Gaur | All Rights Reserved</footer>
+  </body>
+</html>

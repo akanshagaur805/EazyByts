@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blog | Akansha Gaur</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* ===== Base Styles ===== */
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        color: #f5f5f5;
+        background: url("blog.jpg") no-repeat center center fixed;
+        background-size: cover;
+        position: relative;
+      }
+
+      /* Add a dark overlay for readability */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(5px);
+        z-index: -1;
+      }
+
+      /* ===== Header ===== */
+      header {
+        background: rgba(30, 30, 30, 0.9);
+        padding: 20px 0;
+        text-align: center;
+        border-bottom: 2px solid #00ff7f;
+      }
+
+      header h1 {
+        color: #00ff7f;
+        margin-bottom: 5px;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+      }
+
+      nav ul li {
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        color: #f5f5f5;
+        text-decoration: none;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: #00ff7f;
+      }
+
+      /* ===== Blog Header ===== */
+      .blog-header {
+        text-align: center;
+        margin-top: 60px;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 30px;
+        border-radius: 10px;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .blog-header h2 {
+        color: #00ff7f;
+        font-size: 2.5rem;
+      }
+
+      /* ===== Blog Cards ===== */
+      .blog-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        padding: 50px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .blog-card {
+        background: rgba(30, 30, 30, 0.9);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s ease;
+      }
+
+      .blog-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .blog-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .blog-content {
+        padding: 20px;
+      }
+
+      .blog-content h3 {
+        color: #00ff7f;
+        font-size: 1.4rem;
+      }
+
+      .blog-content p {
+        font-size: 0.95rem;
+        color: #ccc;
+        margin: 10px 0 20px;
+      }
+
+      .read-more {
+        display: inline-block;
+        padding: 8px 18px;
+        background: #00ff7f;
+        color: #000;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+
+      .read-more:hover {
+        background: #02cc65;
+      }
+
+      /* ===== Footer ===== */
+      footer {
+        text-align: center;
+        padding: 30px;
+        color: #aaa;
+        background: rgba(26, 26, 26, 0.9);
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Akansha Gaur</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html" style="color:#00ff7f;">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="blog-header">
+      <h2>My Blog</h2>
+      <p>Insights, learning, and tech updates from my journey.</p>
+    </div>
+
+    <div class="blog-container">
+      <div class="blog-card">
+        <img src="AI.jpg" alt="AI Blog" />
+        <div class="blog-content">
+          <h3>Understanding Artificial Intelligence</h3>
+          <p>
+            Explore how AI is reshaping industries, from automation to data
+            insights, and why it’s the future of innovation.
+          </p>
+          <a href="blog_ai.html" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <img src="webdev.jpg" alt="Web Development" />
+        <div class="blog-content">
+          <h3>Modern Web Development</h3>
+          <p>
+            Dive into modern web technologies like React, Node.js, and
+            responsive design principles that shape today’s web.
+          </p>
+          <a href="blog_webdev.html" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <img src="data.jpg" alt="Data Analytics" />
+        <div class="blog-content">
+          <h3>Power of Data Analytics</h3>
+          <p>
+            Learn how data drives smarter decisions and the key tools used for
+            data visualization, analytics, and insights.
+          </p>
+          <a href="blog_data.html" class="read-more">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>© 2025 Akansha Gaur | All Rights Reserved</footer>
+  </body>
+</html>

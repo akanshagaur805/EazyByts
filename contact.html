@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Akansha Gaur</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #00ff7f;
+      --text-color: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      color: var(--text-color);
+      background: url("contact-bg.jpg") no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Overlay for text visibility */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(3px);
+      z-index: -1;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.85);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      flex-wrap: wrap;
+      border-bottom: 2px solid var(--primary-color);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      color: var(--primary-color);
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--primary-color);
+    }
+
+    /* ===== CONTACT SECTION ===== */
+    #contact {
+      padding: 6rem 1rem 4rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    #contact h2 {
+      font-size: 2.5rem;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+      text-shadow: 0 0 15px rgba(0, 255, 127, 0.5);
+    }
+
+    #contact p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
+      color: #ddd;
+    }
+
+    form {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 90%;
+      max-width: 500px;
+    }
+
+    input, textarea {
+      padding: 1rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      background: rgba(255, 255, 255, 0.15);
+      color: white;
+      outline: none;
+      transition: background 0.3s ease;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: #ccc;
+    }
+
+    input:focus, textarea:focus {
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    button {
+      padding: 1rem;
+      background: var(--primary-color);
+      color: #000;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: transform 0.2s ease, background 0.3s ease;
+    }
+
+    button:hover {
+      background: #02cc65;
+      transform: scale(1.03);
+    }
+
+    .contact-info {
+      margin-top: 2.5rem;
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    .contact-info a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .social-links {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      font-size: 1.8rem;
+    }
+
+    .social-links a {
+      color: var(--primary-color);
+      transition: color 0.3s ease, transform 0.2s ease;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      color: #fff;
+      transform: scale(1.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      border-top: 2px solid var(--primary-color);
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      #contact h2 {
+        font-size: 2rem;
+      }
+      header {
+        flex-direction: column;
+      }
+      nav {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Akansha Gaur</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About Me</a>
+      <a href="contact.html" style="color:#00ff7f;">Contact</a>
+    </nav>
+  </header>
+
+  <section id="contact">
+    <h2>Let’s Work Together</h2>
+    <p>Got a project, collaboration idea, or opportunity in mind? I’d love to hear from you. Drop a message below and I’ll get back soon.</p>
+
+    <form id="contactForm">
+      <input type="text" id="name" name="name" placeholder="Your Name" required />
+      <input type="email" id="email" name="email" placeholder="Your Email" required />
+      <input type="text" id="subject" name="subject" placeholder="Subject (optional)" />
+      <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p>Email: <a href="mailto:gaurakansha7394@gmail.com">gaurakansha7394@gmail.com</a></p>
+      <div class="social-links">
+        <a href="https://github.com/" target="_blank">🐙</a>
+        <a href="https://www.linkedin.com/in/akansha-gaur-24b976244/" target="_blank">💼</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Akansha Gaur | All rights reserved. </p>
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you for your message! I'll reply soon.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>

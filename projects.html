@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Akansha Gaur</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ===== Background Setup ===== */
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      color: #fff;
+      background: url("profliebg.jpg") no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Dark overlay for readability */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(3px);
+      z-index: -1;
+    }
+
+    /* ===== Header ===== */
+    header {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+      background: rgba(0, 0, 0, 0.7);
+      border-bottom: 2px solid #00ff7f;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #00ff7f;
+      letter-spacing: 2px;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #e0e0e0;
+      letter-spacing: 1px;
+    }
+
+    /* ===== Navigation ===== */
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 1.5rem 0;
+      gap: 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #f5f5f5;
+      font-weight: 500;
+      letter-spacing: 1px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ff7f;
+    }
+
+    /* ===== Projects Section ===== */
+    .projects {
+      max-width: 1100px;
+      margin: 4rem auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    .projects h2 {
+      color: #00ff7f;
+      font-size: 2.3rem;
+      margin-bottom: 2.5rem;
+      text-shadow: 0 0 15px rgba(0, 255, 127, 0.5);
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    /* ===== Project Cards ===== */
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      backdrop-filter: blur(6px);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0, 255, 127, 0.4);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1.5rem;
+    }
+
+    .card-content h3 {
+      color: #00ff7f;
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+    }
+
+    .card-content p {
+      color: #ddd;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    .card-content a {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #000;
+      background: #00ff7f;
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .card-content a:hover {
+      background: #02cc65;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>AKANSHA GAUR</h1>
+    <p>PROJECTS & CASE STUDIES</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#projects" style="color:#00ff7f;">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="projects" id="projects">
+    <h2>My Work</h2>
+    <div class="project-grid">
+
+      <!-- Project 1 -->
+      <div class="card">
+        <img src="face.jpg" alt="Face Recognition System" />
+        <div class="card-content">
+          <h3>🎓 Face Recognition Attendance System</h3>
+          <p>
+            An AI-powered attendance solution using Python, OpenCV, and MySQL for
+            automated student tracking with facial recognition.
+          </p>
+          <a href="project1_face.html">View Project</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="card">
+        <img src="dashboard.jpg" alt="Data Analysis Dashboard" />
+        <div class="card-content">
+          <h3>📊 Data Analysis Dashboard</h3>
+          <p>
+            Interactive analytics dashboard integrating Python, MySQL, and Power BI for data-driven insights.
+          </p>
+          <a href="project2_dashboard.html">View Project</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="card">
+        <img src="logo.webp" alt="Portfolio Website" />
+        <div class="card-content">
+          <h3>🌐 Personal Portfolio Website</h3>
+          <p>
+            A modern responsive portfolio built with HTML, CSS, JavaScript, and Node.js backend.
+          </p>
+          <a href="project3_portfolio.html">View Project</a>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="card">
+        <img src="chatbot.png" alt="AI Chatbot" />
+        <div class="card-content">
+          <h3>🤖 AI Chatbot</h3>
+          <p>
+            A conversational AI system using NLP and Python to simulate smart, human-like interactions.
+          </p>
+          <a href="project4__chatbot.html">View Project</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
